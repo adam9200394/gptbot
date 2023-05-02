@@ -158,7 +158,9 @@
 
 
         @media (max-width: 1000px) {
-
+            p {
+                font-size: 3rems;
+            }
             .content-container {
                 flex-direction: column-reverse;
             }
@@ -360,7 +362,7 @@
             }
             .bacground-video {
                 z-index: -1000;
-              
+                filter: blur(6px) saturate(0.5);
                 position: fixed;
                 right: 0;
                 bottom: 0;
@@ -702,9 +704,9 @@
 		`;
 
 		const messagesContainerStyle = `
-            height: ${window.innerHeight - 205 }px;
+            height: ${window.innerHeight - 200 }px;
             /* background-color: rgba(0, 0, 0, 0.85); */
-            background-image: linear-gradient(rgb(0 0 0 / 77%) 0%, rgb(0 0 0 / 77%)25%,rgb(0 0 0 / 77%) 50%, rgb(0 0 0 / 77%)75%, rgb(0 0 0 / 44%) 100%);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0.77) 25%, rgba(0, 0, 0, 0.77) 50%, rgba(0, 0, 0, 0.77) 75%, rgb(220 1 1 / 0%) 100%);
 }
 
              
